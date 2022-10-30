@@ -3,11 +3,13 @@ import { Redirect, Route, Switch } from "react-router-dom";
 import TodoAdd from "@components/Todo/TodoAdd";
 import TodoModify from "@components/Todo/TodoModify";
 import TodoRead from "@components/Todo/TodoRead";
+import TodoPaging from "@components/Todo/TodoPaging";
 import TodoList from "./TodoList";
 
 const Index = () => (
   <Switch>
     <Route path="/list" component={TodoList} />
+    <Route path="/paging" component={TodoPaging} />
     <Route path="/add" component={TodoAdd} />
     <Route path="/modify/:id" component={TodoModify} />
     <Route path="/read/:id" component={TodoRead} />

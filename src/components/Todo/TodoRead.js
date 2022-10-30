@@ -30,7 +30,7 @@ const TodoRead = () => {
       setTodo(list);
       console.log(todo);
     });
-  }, [id, todo]);
+  }, []);
 
   const clickHandler = () => {
     todoDelete(id).then(() => {
